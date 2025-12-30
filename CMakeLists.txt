@@ -104,7 +104,8 @@ if (GPU_CUDA_SUPPORT)
             src/kernels/cu/sum_01_atomics.cu
             src/kernels/cu/sum_02_atomics_load_k.cu
             src/kernels/cu/sum_03_local_memory_atomic_per_workgroup.cu
-            src/kernels/cu/sum_04_local_reduction.cu)
+            src/kernels/cu/sum_04_local_reduction.cu
+            src/kernels/cu/sum_05_reduction_one_kernel.cu)
 
     add_definitions(-DCUDA_SUPPORT)
     add_library(${PROJECT_NAME}_core STATIC ${SOURCES} ${CUDA_SOURCES} ${HEADERS})
